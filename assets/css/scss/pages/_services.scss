@@ -1,0 +1,249 @@
+// ================ start services =======
+.services {
+  margin: 50px 0;
+
+  .nav-tabs {
+    margin: 30px auto;
+    gap: 10px;
+    border: none;
+
+    .nav-item {
+      .nav-link {
+        width: auto;
+        height: 45px;
+        background: $secColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border: none;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: $mainColor;
+        }
+      }
+    }
+  }
+
+  .box {
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeUp;
+
+    &:hover {
+      .image {
+        img {
+          transform: scale(1.1);
+        }
+
+        &::after {
+          transform: translateX(100%);
+        }
+        &::before {
+          transform: translateX(-100%);
+        }
+
+        &::after,
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      h3 {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(0px);
+        transition: 0.5s;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(0px);
+        transition: 0.5s;
+        z-index: 9;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        transition: 0.5s;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+      padding: 20px;
+      background-color: #fff;
+      text-align: center;
+      position: absolute;
+      bottom: 188px;
+      width: 90%;
+      display: block;
+      margin: auto;
+      left: 18px;
+      transition: 0.5s;
+      z-index: 10;
+    }
+
+    .content {
+      padding: 50px 20px;
+      p {
+        text-align: center;
+      }
+
+      button {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        outline: none;
+        margin: auto;
+        font-weight: 400;
+        font-size: 16px;
+        transition: 0.5s;
+        color: $mainColor;
+
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  li {
+    a {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      color: $mainColor;
+      border-radius: 50%;
+      padding: 20px;
+    }
+
+    &.active a {
+      background-color: $mainColor !important;
+      color: #fff;
+    }
+  }
+}
+
+.single_product {
+  padding: 70px 0;
+
+  .product_box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .image {
+      height: 250px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      padding: 20px;
+      font-size: 17px;
+    }
+
+    .action {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        background: $mainColor;
+        outline: none;
+        margin: 10px;
+        border: 1px solid transparent;
+        transition: 0.5s;
+
+        &:hover {
+          color: $mainColor;
+          border: 1px solid $mainColor;
+          box-shadow: inset 15em 0 0 0 #fff;
+        }
+      }
+    }
+  }
+
+  .apply_now {
+    background: #009f45;
+    border-radius: 10px;
+    padding: 20px 15px;
+
+    h3 {
+      font-size: 17px;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      height: 45px;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+
+      border: 1px solid transparent;
+      transition: 0.5s;
+
+      &:hover {
+        color: #fff;
+        border: 1px solid #fff;
+        box-shadow: inset 20em 0 0 0 $mainColor;
+      }
+    }
+  }
+}
+// ================ end services =========

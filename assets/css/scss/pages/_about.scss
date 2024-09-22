@@ -1,0 +1,219 @@
+// ============= start about us =================
+.mftc_photos.about {
+  .box {
+    min-height: unset;
+
+    .image {
+      height: 350px;
+      border-radius: 10px;
+    }
+
+    .icon_play {
+      top: 50%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.our_goals {
+  padding: 50px 0;
+  background-color: #161a33;
+
+  .box {
+    .image {
+      img {
+        filter: invert(1);
+      }
+    }
+
+    h3 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+
+    &:hover {
+      border-radius: 6px;
+
+      .image {
+        img {
+          filter: unset;
+        }
+      }
+      h3 {
+        color: $mainColor;
+      }
+      p {
+        color: #000;
+      }
+    }
+  }
+}
+
+.our_vision {
+  padding: 70px 0;
+  background: #f2f2f2;
+  overflow: hidden;
+  .box {
+    padding: 32px 32px 50px;
+    transition: 0.5s;
+    box-shadow: 0 4px 24px 0 rgba(214, 214, 214, 0.25);
+    border-bottom: 2px solid transparent;
+    background: #fff;
+    .image {
+      img {
+        width: 65px;
+        height: 40px;
+        opacity: 0.1;
+        object-fit: contain;
+        transition: 0.5s;
+      }
+    }
+
+    h4 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+    }
+
+    &:hover {
+      .image {
+        img {
+          opacity: 1;
+        }
+      }
+      border-bottom: 5px solid $mainColor;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about_quality .image {
+    width: 100%;
+  }
+  .about_quality .all_img .img-3,
+  .about_quality .all_img .img-2,
+  .about_quality .all_img .img-1 {
+    display: none;
+  }
+}
+
+.choose_about {
+  margin: 50px 0;
+
+  .advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: 0.5s;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    p {
+    }
+
+    &:hover {
+      background-color: $secColor;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}
+
+.latest_pro {
+  margin: 50px 0;
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+
+    .image {
+      position: relative;
+      border-radius: 5px;
+
+      img {
+        height: 350px;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+
+        .content {
+          text-align: center;
+          padding: 10px 0;
+          background-color: $mainColor;
+          color: #fff;
+          position: absolute;
+          width: 100%;
+          height: 100px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+          visibility: visible;
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+
+  .owl-nav {
+    button {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+    i {
+      font-size: 25px;
+    }
+  }
+
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+}
+
+// ============= start about us =================

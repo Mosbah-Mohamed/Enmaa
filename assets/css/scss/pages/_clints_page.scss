@@ -1,0 +1,67 @@
+// =============== clints_page ===============
+.clints_page {
+  margin: 50px 0;
+
+  .head {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 40px;
+      text-align: center;
+      margin: 30px auto 0;
+      font-weight: bold;
+      color: $secColor;
+    }
+    span {
+      display: block;
+      margin: auto;
+      height: 4px;
+      width: 100px;
+      background: $secColor;
+    }
+  }
+
+  .box_image {
+    margin-bottom: 30px;
+    border: 2px solid $secColor;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    min-height: 164px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    img {
+      max-width: 100px;
+      transition: 0.5s;
+      mix-blend-mode: multiply;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.credit_page {
+  .box_image {
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+    }
+    h4 {
+      font-size: 17px;
+      margin: 20px 0;
+      color: $secColor;
+    }
+    p {
+    }
+  }
+}
+// =============== clints_page ===============

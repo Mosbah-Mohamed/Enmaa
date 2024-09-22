@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fin</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome 5 -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- vendor styles -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/owl.carousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/owl.carousel/css/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="assets/vendor/Select2/select2.min.css" />
+    <link rel="stylesheet" href="assets/vendor/odometer.css" />
+    <link rel="stylesheet" href="assets/vendor/FontAwesome/all.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/ion.rangeSlider/ion.rangeSlider.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/nice-select/nice-select.css" />
+
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- <link rel="stylesheet" href="assets/css/style-ltr.css"> -->
+  </head>
+
+  <body>
+    <!--======================== start navtop =============================-->
+    <section class="navtop">
+      <div class="container">
+        <div class="content flex-h">
+          <ul class="contact-info-two d-none d-lg-flex">
+            <li>
+              <a href="mailto:http://mail@example.com" class="text-white"
+                ><i class="fal fa-envelope"></i>mail@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:010101010" class="text-white"
+                ><i class="fal fa-phone"></i>997928928298</a
+              >
+            </li>
+          </ul>
+          <div class="header-search d-none d-lg-block">
+            <form class="" action="#">
+              <input
+                type="text"
+                placeholder="ابحث في الموقع"
+                name="q"
+                autocomplete="off"
+              />
+              <button type="submit" class="flex-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    id="Combined_Shape"
+                    data-name="Combined Shape"
+                    d="M18.292,19.707l-3.678-3.678a9.009,9.009,0,1,1,1.414-1.414l3.678,3.678a1,1,0,0,1-1.415,1.415ZM2,9a7,7,0,0,0,11.87,5.024,1,1,0,0,1,.154-.154A7,7,0,1,0,2,9Z"
+                    fill="#1A43A8"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="settings flex-h">
+            <div class="icons flex-h gap-20">
+              <ul class="social-links clearfix">
+                <li>
+                  <a href="https://www.facebook.com/"
+                    ><span class="fab fa-facebook-f"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/"
+                    ><span class="fab fa-linkedin-in"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.skype.com/"
+                    ><span class="fab fa-instagram"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/"
+                    ><span class="fab fa-twitter"></span
+                  ></a>
+                </li>
+              </ul>
+              <a href="#" class="bold text-white">مركز التحميل</a>
+              <a href="#" class="lang bold flex-h gap-5 text-white">
+                <span>English</span>
+                <i class="fal fa-globe"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================== End navtop =============================-->
+
+    <!--======================== start navbar =============================-->
+    <nav class="header-list inside_header" id="fixed-header">
+      <div class="content-header">
+        <div class="container">
+          <div class="d-flex align-items-center p-relative">
+            <div class="nav-mobile d-lg-none flex-1">
+              <div class="toggle-menu"><i class="fal fa-bars"></i></div>
+            </div>
+            <div class="header-logo flex-1">
+              <div class="logo">
+                <a href="#" title="Orfarm" rel="home" target="_parent">
+                  <img src="assets/img/logo.png" alt="Orfarm" />
+                </a>
+              </div>
+            </div>
+            <div class="nav-menus d-none d-lg-block flex-grow-2 text-center">
+              <div class="nav-desktop">
+                <div class="primary-menu-container">
+                  <ul id="mega_main_menu_ul" class="nav-menu">
+                    <li>
+                      <a href="#" target="_parent"
+                        ><i class="fal fa-home"></i
+                      ></a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                      <a href="#" target="_parent">المجالات التدريبية</a>
+                      <ul class="sub-menu sub-menu-elementor default">
+                        <li>
+                          <section class="elementor-section-boxed">
+                            <div class="elementor-container">
+                              <div class="elementor-column col-lg-3">
+                                <div class="elementor-element-populated">
+                                  <div
+                                    class="elementor-widget elementor-widget-heading"
+                                  >
+                                    <div class="elementor-widget-container">
+                                      <h2 class="elementor-heading-title">
+                                        اسم المجال
+                                      </h2>
+                                    </div>
+                                  </div>
+                                  <div class="elementor-widget">
+                                    <div class="elementor-widget-container">
+                                      <ul class="elementor-icon-list-items">
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="elementor-column col-lg-3">
+                                <div class="elementor-element-populated">
+                                  <div
+                                    class="elementor-widget elementor-widget-heading"
+                                  >
+                                    <div class="elementor-widget-container">
+                                      <h2 class="elementor-heading-title">
+                                        اسم المجال
+                                      </h2>
+                                    </div>
+                                  </div>
+                                  <div class="elementor-widget">
+                                    <div class="elementor-widget-container">
+                                      <ul class="elementor-icon-list-items">
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="elementor-column col-lg-3">
+                                <div class="elementor-element-populated">
+                                  <div
+                                    class="elementor-widget elementor-widget-heading"
+                                  >
+                                    <div class="elementor-widget-container">
+                                      <h2 class="elementor-heading-title">
+                                        اسم المجال
+                                      </h2>
+                                    </div>
+                                  </div>
+                                  <div class="elementor-widget">
+                                    <div class="elementor-widget-container">
+                                      <ul class="elementor-icon-list-items">
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="elementor-column col-lg-3">
+                                <div class="elementor-element-populated">
+                                  <div
+                                    class="elementor-widget elementor-widget-heading"
+                                  >
+                                    <div class="elementor-widget-container">
+                                      <h2 class="elementor-heading-title">
+                                        اسم المجال
+                                      </h2>
+                                    </div>
+                                  </div>
+                                  <div class="elementor-widget">
+                                    <div class="elementor-widget-container">
+                                      <ul class="elementor-icon-list-items">
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                        <li class="elementor-icon-list-item">
+                                          <a href="#" target="_parent">
+                                            <span>اسم الدورة</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children dropdown">
+                      <a href="#" target="_parent">من نحن</a>
+                      <ul class="sub-menu default">
+                        <li><a href="#" target="_parent">عن المركز</a></li>
+                        <li><a href="#" target="_parent">الادارة</a></li>
+                        <li><a href="#" target="_parent">منهجية التدريب</a></li>
+                        <li><a href="#" target="_parent">منهجية التقييم</a></li>
+                        <li><a href="#" target="_parent">خبراء التدريب</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children dropdown">
+                      <a href="#" target="_parent">المركز الاعلامي</a>
+                      <ul class="sub-menu default">
+                        <li><a href="#" target="_parent">الاخبار</a></li>
+                        <li><a href="#" target="_parent">قالو عنا</a></li>
+                        <li><a href="#" target="_parent">الصور</a></li>
+                        <li><a href="#" target="_parent">الفيديوهات</a></li>
+                        <li><a href="#" target="_parent">الفعاليات</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#" target="_parent">المدونة</a></li>
+                    <li><a href="#" target="_parent">اتصل بنا</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="btns-div align-items-center justify-content-end flex-1 flex-h gap-10"
+            >
+              <a href="#" class="text-white d-none d-md-block">
+                <i class="fal fa-bell"></i>
+              </a>
+              <a href="#" class="text-white d-none d-md-block">
+                <i class="fal fa-shopping-cart"></i>
+              </a>
+              <div class="header-item">
+                <a href="#" class="header-link main-btn main">دخول</a>
+              </div>
+              <a href="#" class="main-btn main d-none d-md-flex">انشاء حساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--======================== End navbar =============================-->
+
+    <!--======================== Start login page =============================-->
+    <div class="terms">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-12">
+            <h3>الشروط والاحكام</h3>
+            <div class="terms_box">
+              <h4>أولا: سياسات التسجيل</h4>
+              <p>
+                بالنسبة للأفراد يتم تسجيل المشارك من خلال نموذج التسجيل المتاح
+                على الموقع الإلكتروني أو من خلال الوسائل الأخرى ولا يتم التأكيد
+                وحجز المقعد إلا بعد دفع رسوم الدورة ووصول رسالة تأكيد التسجيل من
+                قبل المركز الإداري والمالي للتدريب. بالنسبة للمرشحين من الجهات
+                والشركات الحكومية والخاصة يتم من خلال خطاب أو رسالة رسمية صادرة
+                من الجهة ويتم تأكيد التسجيل من قبلنا بعد الاتفاق على كافة تفاصيل
+                انعقاد الدورة من خلال رسالة قبول الترشيحات من قبل المركز. يتم
+                تأكيد التسجيل بعد سداد رسوم التدريب في مده أقصاها سبعة أيام من
+                تاريخ التسجيل، مع ضرورة ارسال صورة من اشعار السداد عبر البريد
+                الإلكتروني أو وسائل التواصل المرفقة في نموذج التسجيل. يوفر
+                المركز خيارات الدفع المختلفة مثل الدفع من خلال التحويل عبر
+                الحسابات البنكية الرسمية أو السداد الإلكتروني او الدفع في مقر
+                المركز نقداً او من خلال أجهزة نقاط البيع. يحق للمركز الغاء او
+                رفض التسجيل او المنع من استخدام الموقع نهائيا من قبل المستخدم
+                وذلك في حالة ثبت مخالفات من قبل المستخدم او التسجيل ببيانات غير
+                صحيحه أو مخالفة للأنظمة والسياسات وذلك دون اشعار مسبق. بالموافقة
+                على التسجيل يحق للمركز ارسال رسائل للدورات والندوات واللقاءات
+                وأخبار المركز، كما يحق للمستخدم الغاء تلك الخاصية في أي وقت
+                بالتواصل مع المركز.
+              </p>
+            </div>
+            <div class="terms_box">
+              <h4>ثانياً: سياسة الحضور</h4>
+              <ul>
+                <li>
+                  يجب على المتدرب حضور مالا يقل على 80% من وقت الدورة وذلك
+                  لاستحقاق شهادة الحضور.
+                </li>
+                <li>
+                  يقوم مشرف الدورة التدريبية بالتحقق من أسماء الحضور ومطابقتها
+                  بأسماء المسجلين.
+                </li>
+                <li>يقوم مشرف الدورة بتسجيل الحضور والتأكد من هوياتهم.</li>
+              </ul>
+            </div>
+
+            <div class="terms_last">
+              <h6>المركز الإداري والمالي للتدريب</h6>
+              <a href="#">تاريخ آخر تحديث 19 مايو 2022</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--======================== Start login page =============================-->
+
+    <!--======================== Start newsletter section =============================-->
+    <div class="newsletter_section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="main-heading mb-50 wow fadeInUp">
+            <h3>اشترك في النشرة البريدية</h3>
+            <p class="text-center">احصل علي احدث اخبارنا</p>
+            <i class="fal fa-envelope"></i>
+          </div>
+          <form action="#">
+            <div class="inputs flex-center wow fadeIn">
+              <div class="input-field flex-h">
+                <span class="icon"><i class="fal fa-user"></i></span>
+                <input type="name" class="form-control" placeholder="الاسم" />
+              </div>
+              <div class="input-field flex-h">
+                <span class="icon"><i class="fal fa-envelope"></i></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="بريدك الالكتروني"
+                />
+              </div>
+              <div class="input-field flex-h">
+                <span class="icon small">الاهتمام</span>
+                <select
+                  class="js-example-basic-multiple form-control"
+                  name="states[]"
+                  multiple="multiple"
+                >
+                  <optgroup label="اختر اهتماماتك">
+                    <option value="AL">مجال 1</option>
+                    <option value="WY">محال 2</option>
+                    <option value="WY">مجال 3</option>
+                    <option value="WY">مجال 4</option>
+                  </optgroup>
+                </select>
+              </div>
+              <button type="submit" class="main-btn animate">انضم الان</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--======================== End newsletter section =============================-->
+
+    <!--======================== Start footer =============================-->
+    <div class="footer-shape">
+      <div class="shape overflow-hidden bottom-footer-shape">
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmsns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <footer class="bg-dark" id="page-footer">
+      <div class="footer-main footer-main1">
+        <div class="container wow fadeIn">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-7 col-md-6">
+                  <div class="widget_text anderson-footer-area-1">
+                    <div class="textwidget custom-html-widget">
+                      <img
+                        width="390"
+                        height="201"
+                        src="assets/img/logo.png"
+                        class="w-auto border-0 footer-logo entered lazyloaded"
+                        alt="logo"
+                      />
+                      <ul class="list-info mb-0 mt-4">
+                        <li>صندوق بريد 74589 ، دبي ، الامارات</li>
+                        <li>رقم التسجيل الضريبي:</li>
+                        <li>100296217100003</li>
+                        <li>
+                          <a href="mailto:info@anderson.ae"
+                            >info<span>@</span>example.ae</a
+                          >
+                        </li>
+                        <li>
+                          <a href="tel:+97143658363"
+                            >الهاتف:
+                            <div style="direction: ltr; display: inline-block">
+                              +971 4 365 8363
+                            </div></a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wa.me/+971564395000"
+                            >واتسآب:
+                            <div style="direction: ltr; display: inline-block">
+                              +971 56 439 5000
+                            </div></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                  <div class="anderson-footer-area-2">
+                    <h6 class="font-weight-normal text-white">روابط سريعة</h6>
+                    <div class="menu-footer-1-container">
+                      <ul class="menu-footer">
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>البحث عن دورة تدريبية</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>مجالات التدريب</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>أماكن التدريب</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>كل الدورات التدريبية</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>سياسة الإلغاء</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="anderson-footer-area-3">
+                    <h6 class="font-weight-normal text-white">عن المركز</h6>
+                    <div class="menu-footer-2-container">
+                      <ul class="menu-footer">
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>اتصل بنا</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>عن المركز</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>مقالات</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>اعتماداتنا</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>آراء المشاركين</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fal fa-chevron-left"></i>
+                            <span>عملائنا</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6 mb-0">
+                  <div class="anderson-footer-area-4">
+                    <h6 class="font-weight-normal text-white">
+                      استفسارات سريعة
+                    </h6>
+                    <div class="textwidget">
+                      <div>
+                        <form action="#">
+                          <div class="row g-3 ps-lg-0 ps-3">
+                            <div class="col-12 col-lg-4">
+                              <span
+                                class="wpcf7-form-control-wrap"
+                                data-name="your-name"
+                              >
+                                <input
+                                  type="text"
+                                  name="your-name"
+                                  value=""
+                                  size="40"
+                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                  aria-required="true"
+                                  aria-invalid="false"
+                                  placeholder="الاسم*"
+                                />
+                              </span>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                              <span
+                                class="wpcf7-form-control-wrap"
+                                data-name="phone"
+                              >
+                                <input
+                                  type="tel"
+                                  name="phone"
+                                  value=""
+                                  size="40"
+                                  class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel form-control"
+                                  aria-invalid="false"
+                                  placeholder="الهاتف"
+                                />
+                              </span>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                              <span
+                                class="wpcf7-form-control-wrap"
+                                data-name="your-email"
+                              >
+                                <input
+                                  type="email"
+                                  name="your-email"
+                                  value=""
+                                  size="40"
+                                  class="form-control"
+                                  aria-required="true"
+                                  aria-invalid="false"
+                                  placeholder="البريد الالكتروني*"
+                                />
+                              </span>
+                            </div>
+                            <div class="col-12">
+                              <span
+                                class="wpcf7-form-control-wrap"
+                                data-name="your-email"
+                              >
+                                <select class="form-control">
+                                  <option value="">نوع الرسالة</option>
+                                  <option value="">نوع الرسالة</option>
+                                  <option value="">نوع الرسالة</option>
+                                  <option value="">نوع الرسالة</option>
+                                  <option value="">نوع الرسالة</option>
+                                  <option value="">نوع الرسالة</option>
+                                </select>
+                              </span>
+                            </div>
+                            <div class="col-12">
+                              <span
+                                class="wpcf7-form-control-wrap"
+                                data-name="your-file"
+                              >
+                                <input
+                                  type="file"
+                                  name="your-file"
+                                  value=""
+                                  size="40"
+                                  class="form-control"
+                                  aria-required="true"
+                                  aria-invalid="false"
+                                />
+                              </span>
+                            </div>
+                            <div class="col-12">
+                              <span
+                                class="wpcf7-form-control-wrap"
+                                data-name="your-message"
+                              >
+                                <textarea
+                                  name="your-message"
+                                  cols="40"
+                                  rows="10"
+                                  class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control"
+                                  aria-required="true"
+                                  aria-invalid="false"
+                                  placeholder="الرسالة*"
+                                ></textarea>
+                              </span>
+                            </div>
+                            <div class="col-12">
+                              <span class="icon-input-btn">
+                                <button type="submit" class="main-btn animate">
+                                  إرسال
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="text-center mt-20">
+                <p class="mb-20">
+                  معتمد من المؤسسة العامة العامة للتدريب المهني والمركز الوطني
+                  للتعليم الالكتروني
+                </p>
+                <div class="flex-center gap-20 flex-col-md">
+                  <img src="assets/img/white__logo.svg" alt="" width="250" />
+                  <img src="assets/img/new_Logo.svg" alt="" width="200" />
+                  <img src="assets/img/payments.png" alt="" width="200" />
+                </div>
+              </div>
+              <ul class="footer-social text-center mt-30">
+                <li class="rtin-facebook">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="rtin-twitter">
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="rtin-instagram">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="rtin-instagram">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights wow fadeIn">
+        <div class="container">
+          <div class="text-center text-white">
+            © 2022 المركز الاداري والمالي للتدريب - كل الحقوق محفوظة.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--======================== End footer =============================-->
+    <!--======================== Start mobile menu =============================-->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-navigation hidden-md hidden-lg">
+      <div id="close-menu-moblie">
+        <a href="javascript:;" target="_parent"
+          >اغلاق<i class="fal fa-times"></i
+        ></a>
+      </div>
+      <form role="search" method="get" class="search-form-container" action="#">
+        <div class="popup-overlay"></div>
+        <div class="search-content-popup">
+          <h3>عن ماذا تبحث ؟</h3>
+          <div class="field-container orfarm-autocomplete-search-wrap">
+            <input
+              type="search"
+              autocomplete="off"
+              id="woocommerce-product-search-field-QzBV3"
+              class="search-field"
+              placeholder="Search Products…"
+              value=""
+              name="s"
+              title="Search for:"
+            />
+            <input type="submit" class="btn-search" value="Search" /><i
+              class="fal fa-search"
+            ></i>
+          </div>
+          <input type="hidden" name="post_type" value="product" />
+        </div>
+      </form>
+
+      <div id="mobile-megamenu" class="tabcontent">
+        <div class="mobile-menu-container">
+          <ul class="nav-menu mobile-menu">
+            <li
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown"
+            >
+              <a href="#" target="_parent">المجالات</a>
+              <ul class="sub-menu">
+                <li><a href="#" target="_parent">مجال 1</a></li>
+                <li><a href="#" target="_parent">مجال 2</a></li>
+                <li><a href="#" target="_parent">مجال 3</a></li>
+                <li><a href="#" target="_parent">مجال 4</a></li>
+                <li><a href="#" target="_parent">مجال 5</a></li>
+              </ul>
+              <span class="toggle-submenu"
+                ><i class="fal fa-chevron-down"></i
+              ></span>
+            </li>
+            <li><a href="#" target="_parent">من نحن</a></li>
+            <li><a href="#" target="_parent">اتصل بنا</a></li>
+            <li>
+              <a href="#" title="" target="_parent"
+                ><i class="fal fa-user"></i>دخول / حساب جديد</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_parent"
+                ><i class="fal fa-shopping-cart"></i>السلة</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_parent"
+                ><i class="fal fa-bell"></i>الاشعارات</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--======================== End mobile menu =============================-->
+
+    <!-- ==================== button up =================== -->
+    <div id="up_btn">
+      <i class="fal fa-arrow-up"></i>
+    </div>
+    <!-- ==================== button up =================== -->
+
+    <!-- vendor scripts -->
+    <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/popper.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendor/lazysizes.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/greensock.min.js"></script>
+    <script src="assets/vendor/ScrollMagic.js"></script>
+    <script src="assets/vendor/animation.gsap.js"></script>
+    <script src="assets/vendor/tween-max.js"></script>
+    <script src="assets/vendor/wow/wow.js"></script>
+    <script src="assets/vendor/Select2/select2.min.js"></script>
+    <script src="assets/vendor/odometer.min.js"></script>
+    <script src="assets/vendor/viewport.jquery.js"></script>
+    <script src="assets/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/ion.rangeSlider/ion.rangeSlider.min.js"></script>
+    <script src="assets/vendor/nice-select/jquery.nice-select.min.js"></script>
+
+    <!-- main.js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

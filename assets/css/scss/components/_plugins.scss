@@ -1,0 +1,90 @@
+/*start button up*/
+
+#up_btn {
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    color: #fff;
+    background-color: $secColor;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    transform: rotate(45deg);
+    i {
+        transform: rotate(-45deg);
+    }
+}
+
+#up_btn:hover {
+    background-color: $mainColor;
+}
+
+#up_btn.fade {
+    visibility: visible;
+    opacity: 1;
+    bottom: 30px;
+}
+
+
+/*End button up*/
+
+
+/*--------------------------------------------------------------
+# Start gsap reveal
+--------------------------------------------------------------*/
+
+.gsap-reveal {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+    }
+}
+
+.gsap-reveal-hero {
+    line-height: 0;
+    .reveal-wrap {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($secColor, 1);
+            margin-left: -100%;
+            z-index: 2;
+        }
+        .reveal-content {
+            line-height: 1.5;
+            z-index: 1;
+            display: block;
+            transform: translateX(-100%);
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End gsap reveal
+--------------------------------------------------------------*/
