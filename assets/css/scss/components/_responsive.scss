@@ -2,6 +2,16 @@
 # Start responsive
 --------------------------------------------------------------*/
 
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1350px;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .newsletter_section .inputs {
     gap: 1%;
@@ -28,6 +38,14 @@
 }
 
 @media (max-width: 991.98px) {
+  .single_service .row.order_row .order {
+    order: unset;
+  }
+
+  .single_service .single-product_box .image {
+    margin-bottom: 20px;
+  }
+
   .our_vision .box {
     margin-bottom: 20px;
   }

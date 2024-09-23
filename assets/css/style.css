@@ -1033,7 +1033,7 @@ hr {
 }
 .header-list .main-btn {
   font-size: 12px;
-  padding: 11px 30px;
+  padding: 11px 30px !important;
   white-space: nowrap;
 }
 .header-list .header-item {
@@ -2325,7 +2325,7 @@ hr {
   top: 80px;
   width: 60%;
   height: 662px;
-  background: rgba(0, 159, 69, 0.1);
+  background: rgba(0, 159, 69, 0.031);
   border-radius: 0px 200px 0 0;
 }
 .why-choose-us-section .container {
@@ -2835,7 +2835,7 @@ hr {
 .testimonials_section .gradiant-box {
   width: 195px;
   height: 195px;
-  opacity: 0.66;
+  opacity: 0.086;
   position: absolute;
   border-radius: 30px;
   background-image: linear-gradient(180deg, #96dcd3, #009f45);
@@ -3292,7 +3292,6 @@ hr {
 .add_order .modal-footer button {
   width: 100%;
   height: 55px;
-  border-radius: 30px;
   border: unset;
 }
 
@@ -3317,6 +3316,7 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  border-radius: 14px;
 }
 .our_services .box:hover {
   box-shadow: 0px 12px 44px rgba(0, 120, 90, 0.06);
@@ -3348,16 +3348,15 @@ hr {
 .our_services .box .flip-card-front .image {
   width: 92px;
   height: 92px;
-  background: #e6e5e5;
   border-radius: 50px;
   margin: auto;
   transition: 0.5s;
 }
 .our_services .box h3 {
   transition: 1s;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 24px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .our_services .box p {
   display: none;
@@ -3383,6 +3382,7 @@ hr {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  white-space: nowrap;
 }
 .our_services .browse_more button {
   width: 264px;
@@ -4331,10 +4331,11 @@ hr {
   overflow: hidden;
 }
 .single_product .product_box .image {
-  height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 .single_product .product_box .image img {
+  height: 100%;
   width: 100%;
 }
 .single_product .product_box h4 {
@@ -4346,7 +4347,7 @@ hr {
   justify-content: center;
 }
 .single_product .product_box .action button {
-  width: 50%;
+  width: 90%;
   padding: 10px;
   text-align: center;
   background: #009f45;
@@ -4355,20 +4356,15 @@ hr {
   border: 1px solid transparent;
   transition: 0.5s;
 }
-.single_product .product_box .action button:hover {
-  color: #009f45;
-  border: 1px solid #009f45;
-  box-shadow: inset 15em 0 0 0 #fff;
-}
 .single_product .apply_now {
   background: #009f45;
   border-radius: 10px;
   padding: 20px 15px;
 }
 .single_product .apply_now h3 {
-  font-size: 17px;
+  font-size: 15px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .single_product .apply_now label {
@@ -4388,6 +4384,39 @@ hr {
   color: #fff;
   border: 1px solid #fff;
   box-shadow: inset 20em 0 0 0 #009f45;
+}
+
+.single_service .row {
+  margin-bottom: 20px;
+}
+.single_service .row.order_row .order {
+  order: 2;
+}
+.single_service .single-product_box .image {
+  max-height: 300px;
+  height: 300px;
+}
+.single_service .single-product_box .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.modal_suggestions .all_suggestions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.modal_suggestions .all_suggestions .content {
+  margin-bottom: 20px;
+}
+.modal_suggestions .all_suggestions .content .image img {
+  max-height: 200px;
+}
+.modal_suggestions .all_suggestions .content .info h6 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .mftc_photos.about .box {
@@ -5293,6 +5322,15 @@ footer .copyrights {
 /*--------------------------------------------------------------
 # Start responsive
 --------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1350px;
+  }
+}
 @media (max-width: 1199.98px) {
   .newsletter_section .inputs {
     gap: 1%;
@@ -5316,6 +5354,12 @@ footer .copyrights {
   }
 }
 @media (max-width: 991.98px) {
+  .single_service .row.order_row .order {
+    order: unset;
+  }
+  .single_service .single-product_box .image {
+    margin-bottom: 20px;
+  }
   .our_vision .box {
     margin-bottom: 20px;
   }

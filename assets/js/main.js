@@ -14,6 +14,19 @@ $(".close-hint").on("click", function () {
   $(this).closest(".hint-bar").slideUp();
 });
 
+$(document).ready(function () {
+  var isModalShown = false; // flag to ensure modal is shown only once
+
+  $(window).scroll(function () {
+      var scrollHeight = $(window).scrollTop();
+
+      if (scrollHeight > 300 && !isModalShown) {
+          $('#suggestion').modal('show');
+          isModalShown = true; // Set flag to true to prevent showing again
+      }
+  });
+});
+
 /*========================= Scroll To Top Using Y Practice ==========================*/
 
 let btnUp = document.getElementById("up_btn");
@@ -109,8 +122,8 @@ $(".testimonials_section .owl-carousel").owlCarousel({
 
 /*=================== testimonials owl carousel ===================*/
 $(".our-dependence-section .owl-carousel").owlCarousel({
-  autoplay: false,
-  nav: true,
+  autoplay: true,
+  nav: false,
   dots: false,
   navText: [
     '<i class="fal fa-chevron-left"></i>',
@@ -613,3 +626,5 @@ $(".latest_pro .owl-carousel").owlCarousel({
     },
   },
 });
+
+
