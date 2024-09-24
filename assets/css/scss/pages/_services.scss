@@ -293,7 +293,6 @@
       .image {
         img {
           max-height: 200px;
-
         }
       }
 
@@ -305,5 +304,26 @@
       }
     }
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+.pagination a {
+  text-decoration: none;
+  color: #000;
+  float: left;
+  padding: 8px 16px;
+}
+.pagination1 a.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+.pagination1 a:hover:not(.active) {
+  background-color: #ddd;
 }
 // ================ end services =========
