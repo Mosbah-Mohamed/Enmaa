@@ -326,4 +326,47 @@
 .pagination1 a:hover:not(.active) {
   background-color: #ddd;
 }
+
+.modal_pay {
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    .box {
+      img {
+      }
+    }
+  }
+
+  .form {
+    .form-group {
+      margin-bottom: unset;
+
+      input {
+        width: 100%;
+        text-indent: 15px;
+        outline: unset;
+        border-radius: 10px;
+        background: #f1f1f1;
+        border: 1px solid #eee;
+
+        &:focus {
+          outline: unset;
+        }
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .pay_btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
 // ================ end services =========
