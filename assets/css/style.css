@@ -5726,6 +5726,12 @@ footer .copyrights {
     margin: 0 10px;
   }
 }
+@media (min-width: 1000px) {
+  .header-logo {
+    width: 220px;
+    flex: unset;
+  }
+}
 @media (max-width: 1199.98px) and (min-width: 992px) {
   .primary-menu-container ul.nav-menu > li > a {
     font-size: 0.8em;
@@ -5862,9 +5868,6 @@ footer .copyrights {
   }
   footer .footer-social {
     margin-top: 30px;
-  }
-  .header-list .flex-1 {
-    flex: none;
   }
   .header-list .d-flex.align-items-center.p-relative {
     justify-content: space-between;
