@@ -32,7 +32,7 @@
 
 @media (min-width: 1000px) {
   .header-logo {
-    width: 220px;
+    // width: 220px;
     flex: unset;
   }
 }
@@ -45,6 +45,15 @@
 }
 
 @media (max-width: 991.98px) {
+  .header-list .logo {
+    .logo_info {
+      display: none;
+    }
+    a {
+      justify-content: flex-end;
+    }
+  }
+
   .single_service .row.order_row .order {
     order: unset;
   }
@@ -259,7 +268,7 @@
 @media (max-width: 575.98px) {
   .showBotSubject.botIcon .Layout-expand {
     right: 70px;
-    bottom: 100px;
+    bottom: 130px;
   }
 
   .question_head_img {

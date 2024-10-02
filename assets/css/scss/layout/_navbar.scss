@@ -201,6 +201,16 @@
     right: 0;
     left: 0;
     z-index: 999;
+
+    .logo {
+      .logo_info {
+        span {
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+
     .content-header {
       background: #fff;
       box-shadow: 0 10px 15px rgb(0 0 0 / 5%);
@@ -221,6 +231,16 @@
     right: 0;
     left: 0;
     z-index: 999;
+
+    .logo {
+      .logo_info {
+        span {
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+
     .content-header {
       background: #fff;
       box-shadow: 0 10px 15px rgb(0 0 0 / 5%);
@@ -239,9 +259,24 @@
     transition: all 0.3s;
   }
   .logo {
+    a {
+      display: flex;
+      align-items: center;
+    }
     img {
-      // width: 129px;
-      min-width: 129px;
+      width: 129px;
+      // min-width: 129px;
+    }
+
+    .logo_info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      span {
+        color: #fff;
+        font-weight: bold;
+      }
     }
   }
   .main-btn {
