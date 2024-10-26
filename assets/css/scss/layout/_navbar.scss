@@ -1462,7 +1462,7 @@
   flex: 1;
   form {
     position: relative;
-    width: 250px;
+    width: 450px;
     transition: all 0.3s;
     height: 35px;
     margin: 0 auto;
@@ -1486,7 +1486,7 @@
     outline: none !important;
     border: none;
     top: 50%;
-    // transform: translateY(-50%);
+    transform: translateY(-50%);
     left: 14px;
     svg {
       width: 15px;

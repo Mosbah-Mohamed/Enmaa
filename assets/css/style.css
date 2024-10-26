@@ -2100,7 +2100,7 @@ hr {
 }
 .header-search form {
   position: relative;
-  width: 250px;
+  width: 450px;
   transition: all 0.3s;
   height: 35px;
   margin: 0 auto;
@@ -2124,6 +2124,7 @@ hr {
   outline: none !important;
   border: none;
   top: 50%;
+  transform: translateY(-50%);
   left: 14px;
 }
 .header-search button svg {
